@@ -1,4 +1,5 @@
 import inquirer from 'inquirer';
+import chalk from 'chalk';
 console.log("someOne");
 let user = {
     name: "fozia"
@@ -16,4 +17,4 @@ const userObject = await inquirer.prompt([
         "message": "Enter your  email\n"
     },
 ]);
-console.table(userObject);
+console.log(chalk.red(userObject.firstName));

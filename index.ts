@@ -1,7 +1,8 @@
-import { user as myuser } from './second.js';
+
 
 
  import inquirer from 'inquirer';
+ import chalk from 'chalk';
  console.log("someOne");
  let user ={
     name:"fozia"
@@ -22,4 +23,4 @@ import { user as myuser } from './second.js';
     },
     
     ])
- console.table(userObject);
+ console.log(chalk.red(userObject.firstName));
